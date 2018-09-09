@@ -14,7 +14,7 @@
 	<!-- meta character set -->
 	<meta charset="UTF-8">
 	<!-- Site Title -->
-	<title>数据科学进阶题</title>
+	<title>数据科学进阶题·首页</title>
 
 	<link href="https://fonts.googleapis.com/css?family=Poppins:100,400,300,500,600" rel="stylesheet">
 		<!--
@@ -41,7 +41,7 @@
 							<nav class="hide">
 								<a href="preemption.html">Home</a>
 								<a href="tutorials.html">Tutorials</a>
-								<a href="api.html">API</a>
+								<a href="https://www.zybuluo.com/Vincent-Gao/note/1276738">API</a>
 							</nav>
 							<div class="menu-bar"><span class="lnr lnr-menu"></span></div>
 						</div>
@@ -75,7 +75,9 @@
 					<div class="col-lg-6">
 						<div class="exprience-content">
 							<h2>这是一款使用程序以 <br> 自动抢占领地的游戏</h2>
-							<h6 class="sub-exprience-title">我们提供这样一个游戏对战平台，游戏地图为中国地图，每个省为一个城堡，城堡所在省份实际大小即为控制领地大小，城堡与城堡之间有相生相克的关系，游戏双方先后占领未被双方占领的任意城堡，占领后所有被此城堡克的城堡（也就是这个城堡生的城堡）成为本方城堡（无论此城堡之前状态）。当所有城堡均被占领后，比较双方所占领地大小，大者获胜。所获分数为己方占领地盘大小减去敌方占领地盘大小。</h6>
+							<h6 class="sub-exprience-title">我们提供这样一个游戏对战平台，游戏地图为中国地图，每个省为一个城堡，城堡所在省份实际大小即为控制领地大小，城堡与城堡之间有相生相克的关系（生克本质相同，A“生”B 即为 B被A“克”）。<br><br>
+							游戏双方先后占领未被双方占领的任意城堡，占领后所有被此城堡克的城堡（也就是这个城堡生的城堡）成为本方城堡（无论此城堡之前状态）。当所有城堡均被占领后，本局游戏结束。<br><br>
+							所获分数为己方占领地盘大小减去敌方占领地盘大小。</h6>
 							<p>而且每一局城堡间相生相克关系是变化的。所以参与本题的同学需要设计一套算法来实现自动落子。</p>
 							<a href="#" class="primary-btn">View Details</a>
 						</div>
@@ -162,9 +164,6 @@
 								<h4 class="mb-10">ROUND ONE</h4>
 								<p>游戏初始状态为空白的中国地图，游戏在机器人（蓝方）与参与本题的同学（红方）中展开</p>
 							</div>
-				            <div class="icon">
-								<span class="lnr lnr-screen"></span>
-							</div>
 						</div>
 					</div>
 					<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
@@ -174,11 +173,9 @@
 						<div class="single-service d-flex flex-column align-items-center">
 							<div class="desc mt-30">
 								<h4 class="mb-10">ROUND TWO</h4>
-								<p>蓝方，也就是电脑先行占领城堡，假设它选择了北京，然而根据相生相克规则，北京又“生”新疆与安徽，那么战况如下</p>
+								<p>蓝方，也就是电脑先行占领城堡，假设它选择了北京，然而根据相生相克规则，北京又“生”新疆与安徽，那么战况如上<br><br><br><br></p>
 							</div>
-							<div class="icon">
-								<span class="lnr lnr-picture"></span>
-							</div>
+
 						</div>
 					</div>
 					<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
@@ -188,13 +185,11 @@
 						<div class="single-service d-flex flex-column align-items-center">
 							<div class="desc mt-30">
 								<h4 class="mb-10">ROUND THREE</h4>
-								<p>红方，也就是参赛选手选择了宁夏，根据相生相克规则，宁夏又“生”海南与新疆，那么战况变更为如下</p>
-							</div>
-							<div class="icon">
-								<span class="lnr lnr-laptop-phone"></span>
+								<p>红方，也就是参赛选手选择了宁夏，根据相生相克规则，宁夏又“生”海南与新疆，那么战况变更为如上</p>
 							</div>
 						</div>
 					</div>
+
 					<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
 					    <div style="width:100%; text-align:center;">
                             <img src=img/map_4.png border=0>
@@ -202,10 +197,7 @@
 						<div class="single-service d-flex flex-column align-items-center">
 							<div class="desc mt-30">
 								<h4 class="mb-10">ROUND FOUR</h4>
-								<p>当所有城堡均被占领后，游戏结束，最终如下。此时进入清算环节，注意，比赛比的是哪方占领的城堡对应的领地总大小，而不是城堡数量</p>
-							</div>
-							<div class="icon">
-								<span class="lnr lnr-gift"></span>
+								<p>当所有城堡均被占领后，游戏结束，最终如上。此时进入清算环节，注意，比赛比的是哪方占领的城堡对应的领地总大小，而不是城堡数量</p>
 							</div>
 						</div>
 					</div>
@@ -261,9 +253,10 @@
 							</div>
 							<div class="desc">
 								<h4 class="mb-10">Advanced Requirements</h4>
-								<p>	基础要求对得分没有要求，扩展要求希望大家能够尽可能的设计算法以取得高分。<br>
+								<p>	基础要求对得分没有要求。<br>
+									扩展要求希望大家能够尽可能的设计算法以取得高分。<br>
 									从服务器端获取到可视化界面，完整和服务器对战一局。<br>
-									并且获得完整流程的可视化对战情况。
+									并且获得完整流程的可视化对战情况（从空白到游戏结束）。
 								</p>
 							</div>
 						</div>
