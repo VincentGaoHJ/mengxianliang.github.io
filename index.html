@@ -10,7 +10,21 @@
 
 <body style="background-color:rgba(215,196,187,1);">
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="6" src="//music.163.com/outchain/player?type=3&amp;id=2061995131&amp;auto=1&amp;height=66"></iframe>
-<iframe src="weather.seniverse.com/?token=29cea662-3fe8-4427-903e-188708646437"></iframe>
+<div id="tp-weather-widget"></div>
+<script>
+  (function(a,h,g,f,e,d,c,b){b=function(){d=h.createElement(g);c=h.getElementsByTagName(g)[0];d.src=e;d.charset="utf-8";d.async=1;c.parentNode.insertBefore(d,c)};a["SeniverseWeatherWidgetObject"]=f;a[f]||(a[f]=function(){(a[f].q=a[f].q||[]).push(arguments)});a[f].l=+new Date();if(a.attachEvent){a.attachEvent("onload",b)}else{a.addEventListener("load",b,false)}}(window,document,"script","SeniverseWeatherWidget","//cdn.sencdn.com/widget2/static/js/bundle.js?t="+parseInt((new Date().getTime() / 100000000).toString(),10)));
+  window.SeniverseWeatherWidget('show', {
+    flavor: "bubble",
+    location: "WX4FBXXFKE4F",
+    geolocation: false,
+    language: "en",
+    unit: "c",
+    theme: "auto",
+    token: "29cea662-3fe8-4427-903e-188708646437",
+    hover: "enabled",
+    container: "tp-weather-widget"
+  })
+</script>
 <div class="vi">
     <div class="sidebar">
         <div class="header">
